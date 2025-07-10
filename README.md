@@ -39,6 +39,10 @@ This project implements a simple feedforward neural network from scratch (withou
 
 It serves as an educational example to understand how neural networks work under the hood — covering every step from data loading and preprocessing to forward propagation, backpropagation, and training.
 
+
+<a href = "https://drive.google.com/file/d/1gZVSu9wGjcYM7_pejKz4XoVDIOQEJlBY/view?usp=drive_link" >train.csv</a>.
+This is the link for the data set
+(use the same for the test and train after naming one each as test dataset lacks the required labels)
 ---
 ###  Neurons & Layers
 
