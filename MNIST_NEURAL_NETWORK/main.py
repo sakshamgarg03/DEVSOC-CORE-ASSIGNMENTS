@@ -4,19 +4,18 @@ from data_loader import load_mnist_from_csv
 from layer import Layer
 from activations import sigmoid, sigmoid_derivative, relu, relu_derivative,softmax,cross_entropy
 
-# Load Data
+
 train_data = load_mnist_from_csv("data/train.csv", limit=5000)
 test_data = load_mnist_from_csv("data/test.csv", limit=400)
 
-# Define Network Architecture: 784 → 64 → 10
 layer1 = Layer(784, 64, relu, relu_derivative)
 layer2 = Layer(64, 10, softmax, None)
 
-# Training Params
+# Training Parameters (using different para changes accuracy)
 learning_rate = 0.01
 epochs = 20
 
-# For plotting
+
 train_losses = []
 train_accuracies = []
 test_accuracies = []
@@ -52,7 +51,7 @@ for epoch in range(epochs):
         if np.argmax(a2) == np.argmax(y):
             test_correct += 1
 
-    # Metrics
+
     avg_loss = total_loss / len(train_data)
     train_acc = correct / len(train_data)
     test_acc = test_correct / len(test_data)
