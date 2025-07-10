@@ -32,3 +32,8 @@ The code is written using google colab notebooks.
 
 ## PROJECT 2 :NEURAL NETWORK USING MNIST DATASET
 
+### ABOUT
+
+This project implements a simple feedforward neural network from scratch (without using PyTorch or TensorFlow) to classify handwritten digits from the popular MNIST dataset.
+
+It serves as an educational example to understand how neural networks work under the hood — covering every step from data loading and preprocessing to forward propagation, backpropagation, and training.
